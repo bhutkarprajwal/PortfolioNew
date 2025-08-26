@@ -1091,3 +1091,41 @@ html, body {
 }
 
 /* ...existing code... */
+/* ...existing code... */
+
+/* For screens below 768px, reduce about image size and scaling */
+@media (max-width: 768px) {
+  .about-img img {
+    width: 50vw;
+    max-width: 220px;
+    min-width: 120px;
+    border-width: 10px;
+    margin-bottom: 2rem;
+    transform: scale(1.05);
+  }
+}
+
+/* For screens below 600px, make it even smaller */
+@media (max-width: 600px) {
+  .about-img img {
+    width: 65vw;
+    max-width: 160px;
+    min-width: 80px;
+    border-width: 6px;
+    margin-bottom: 1.5rem;
+    transform: scale(1);
+  }
+}
+
+/* For very small screens */
+@media (max-width: 400px) {
+  .about-img img {
+    width: 80vw;
+    max-width: 110px;
+    min-width: 60px;
+    border-width: 4px;
+    margin-bottom: 1rem;
+    transform: scale(1);
+  }
+}
+/* ...existing code... */
