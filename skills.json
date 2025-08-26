@@ -1,0 +1,89 @@
+[     
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/?size=48&id=13441&format=png"
+    },  
+    {
+        "name": "Java",
+        "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+    },
+    {
+
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    },    
+    {
+        "name": "Angular",
+        "icon": "https://avatars.githubusercontent.com/u/139426?s=48&v=4"
+    },
+    {
+        "name": "HTML5",
+        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+    },
+    {
+        "name": "CSS3",
+        "icon": "https://img.icons8.com/color/48/000000/css3.png"
+    },   
+    {
+        "name": "Numpy",
+        "icon": "https://img.icons8.com/?size=48&id=aR9CXyMagKIS&format=png"
+    },
+    {
+        "name": "Pandas",
+        "icon": "https://img.icons8.com/?size=48&id=xSkewUSqtErH&format=png"
+    },
+    {
+        "name": "Matplotlib",
+        "icon": "https://github.com/matplotlib.png?size=40"
+    },
+    {
+        "name": "Django",
+        "icon": "https://img.icons8.com/?size=50&id=qc3TyHJPxEoH&format=png"
+    },
+    {
+        "name": "REST API",
+        "icon": "https://img.icons8.com/?size=48&id=kPg79e2BUhFm&format=png"
+    },
+    {
+        "name": "MySQL",
+        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+    },
+    {
+        "name": "PostgreSQL",
+        "icon": "https://img.icons8.com/?size=48&id=38561&format=png&color=000000"
+    },
+    {
+        "name": "Mongo DB",
+        "icon": "https://img.icons8.com/?size=48&id=bosfpvRzNOG8&format=png"
+    },
+   
+    {
+        "name": "GitHub",
+        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+    },
+    
+    {
+        "name": "Git lab",
+        "icon": "https://img.icons8.com/color/48/000000/git.png"
+    },
+    {
+        "name": "AWS",
+        "icon": "https://img.icons8.com/?size=50&id=wU62u24brJ44&format=png"
+    },
+    {
+        "name": "Vercel",
+        "icon": "https://github.com/vercel.png?size=40"
+    }, 
+    {
+        "name": "Postman",
+        "icon": "https://img.icons8.com/?size=50&id=QEQQKirln6Tf&format=png&color=000000"
+    },
+    {
+        "name": "Swagger",
+        "icon": "https://img.icons8.com/?size=50&id=rdKV2dee9wxd&format=png&color=000000"
+    },
+    {
+        "name": "Ngnix",
+        "icon": "https://img.icons8.com/?size=50&id=t2x6DtCn5Zzx&format=png&color=000000"
+    }    
+] 
