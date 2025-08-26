@@ -982,3 +982,112 @@ span{
         cursor: default;
     }
 }
+
+/* ...existing code... */
+
+/* 1. Make .home-img and images scale better on small screens */
+@media (max-width: 991px) {
+  .home-img {
+    min-width: 100%;
+    margin: 4rem 0;
+  }
+  .home-img img {
+    width: 60vw;
+    min-width: unset;
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-img {
+    min-width: 100%;
+    margin: 2rem 0;
+  }
+  .home-img img {
+    width: 80vw;
+    min-width: unset;
+    max-width: 95vw;
+  }
+}
+
+/* 2. About section image scaling and padding */
+@media (max-width: 991px) {
+  .about-img img {
+    width: 60vw;
+    min-width: unset;
+    max-width: 90vw;
+    border-width: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .about-img img {
+    width: 80vw;
+    border-width: 8px;
+  }
+}
+
+/* 3. Portfolio grid improvements */
+@media (max-width: 991px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .portfolio-box img {
+    width: 100%;
+    height: auto;
+    min-width: unset;
+    max-width: 100%;
+  }
+}
+
+/* 4. Footer stacking and padding */
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 5%;
+    text-align: center;
+  }
+  .footer-text p {
+    margin-bottom: 1rem;
+  }
+}
+
+/* 5. Contact form full width on mobile */
+@media (max-width: 600px) {
+  .contact form .input-box {
+    flex-direction: column;
+    gap: 0;
+  }
+  .contact form .input-box input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* 6. General font and spacing tweaks for very small screens */
+@media (max-width: 400px) {
+  html {
+    font-size: 45%;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  .portfolio-layer h4 {
+    font-size: 2rem;
+  }
+}
+
+/* 7. Prevent horizontal scroll on all devices */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* ...existing code... */

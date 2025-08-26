@@ -64,8 +64,21 @@
     .project-section.visible {
       display: flex;
       gap: 35px;
-      align-items: flex-start;
+      align-items: stretch; /* Make all children (image and content) same height */
       flex-wrap: wrap;
+      /* Remove vertical padding from .project-section, use only margin for outer spacing */
+      padding: 0;
+      margin: 50px auto;
+      box-sizing: border-box;
+    }
+
+    .project-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* Make sure image area fills the height of the section */
+      padding: 40px;
+      box-sizing: border-box;
     }
 
     /* Image Slider */
@@ -76,6 +89,8 @@
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+      /* Remove margin from slider, use padding on .project-image instead */
+      margin: 0;
     }
 
     .slides {
@@ -85,6 +100,7 @@
     }
 
     .slides img {
+      align-items: center;
       width: 100%;
       border-radius: 12px;
       object-fit: cover;
@@ -163,6 +179,154 @@
       background: #005f99;
       transform: scale(1.05);
     }
+   
+    @media (max-width: 900px) {
+      .project-section.visible {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+      .project-image {
+        padding: 24px 0 0 0;
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .project-image {
+        padding: 16px 0 0 0;
+      }
+      .slider {
+        width: 100%;
+      }
+    }
+    /* Add this inside your <style> tag in project-details.html for improved responsiveness */
+/* ...existing code... */
+
+/* Responsive adjustments for project details page */
+@media (max-width: 1100px) {
+  .project-section,
+  .project-section.visible {
+    max-width: 98vw;
+    margin: 30px 1vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-section.visible {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0;
+    margin: 30px 0;
+  }
+  .project-image {
+    padding: 24px 0 0 0;
+    justify-content: flex-start;
+  }
+  .project-content {
+    padding: 0 16px 24px 16px;
+  }
+}
+
+/* ...existing code... */
+
+/* Responsive adjustments for project details page */
+@media (max-width: 600px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 10px;
+    gap: 0;
+    text-align: left;
+  }
+  header h1 {
+    font-size: 18px;
+    text-align: left;
+    flex: 1;
+    margin: 0;
+  }
+  .back-btn {
+    width: auto;
+    font-size: 13px;
+    padding: 8px 14px;
+    margin-left: 10px;
+    margin-right: 0;
+  }
+  .project-section,
+  .project-section.visible {
+    margin: 12px 0 12px 0;
+    border-radius: 8px;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  .project-image {
+    padding: 18px 0 18px 0; /* Top and bottom padding, no right/left */
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .slider {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+  }
+  .project-content {
+    padding: 0 8px 16px 8px;
+  }
+  .project-content h2 {
+    font-size: 20px;
+  }
+  .tech-stack span {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+  .links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .link-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    padding: 8px 0;
+  }
+}
+
+/* Remove right gap on all screens for .slider */
+.slider {
+  margin-right: 0 !important;
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+/* ...existing code... */
+
+@media (max-width: 400px) {
+  .project-content h2 {
+    font-size: 16px;
+  }
+  .tech-stack {
+    gap: 5px;
+  }
+  .tech-stack span {
+    font-size: 9px;
+    padding: 3px 6px;
+  }
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* ...existing code... */
   </style>
 </head>
 <body>
@@ -187,7 +351,7 @@
   </div>
 
   <div class="project-content">
-    <h2>🤖 AI Chatbot</h2>
+    <h2> AI Chatbot</h2>
     <div class="tech-stack">
       <span>HTML</span><span>CSS</span><span>JavaScript</span><span>FastApi</span><span>RAG</span><span> Sentence Transformers</span>
       <span> MySql</span>
