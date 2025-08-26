@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Details</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #1e1e2f;
+      color: #e6e6e6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 40px;
+      
+      background: #12121b;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 26px;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    .back-btn {
+      background: #007acc;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #005f99;
+      transform: translateY(-2px);
+    }
+
+    .project-section {
+      display: none;
+      padding: 40px;
+      border-radius: 16px;
+      margin: 50px auto;
+      background: #2b2b3c;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+      max-width: 1100px;
+      transition: all 0.3s ease;
+    }
+
+    .project-section.visible {
+      display: flex;
+      gap: 35px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    /* Image Slider */
+    .slider {
+      position: relative;
+      width: 350px;
+      max-width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    }
+
+    .slides {
+      display: flex;
+      width: 100%;
+      animation: slide 12s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0%); }
+      30% { transform: translateX(0%); }
+      35% { transform: translateX(-100%); }
+      65% { transform: translateX(-100%); }
+      70% { transform: translateX(-200%); }
+      100% { transform: translateX(-200%); }
+    }
+
+    .project-content {
+      flex: 2 1 500px;
+    }
+
+    .project-content h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #4da6ff;
+    }
+
+    /* Tech stack badges */
+    .tech-stack {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+
+    .tech-stack span {
+      background: #007acc;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+    }
+
+    .tech-stack span:hover {
+      transform: scale(1.08);
+      background: #005f99;
+    }
+
+    .project-content p {
+      font-size: 16px;
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    /* Buttons */
+    .links {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .link-btn {
+      text-decoration: none;
+      background: #007acc;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.3s;
+      display: inline-block;
+    }
+
+    .link-btn:hover {
+      background: #005f99;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+
+
+<header>
+  <h1>Project Details</h1>
+  <button class="back-btn" onclick="goBack()">← Back</button>
+</header>
+
+<!-- Chatbot Project -->
+<div id="chatbot" class="project-section visible">
+  <div class="project-image">
+    <div class="slider">
+      <div class="slides">
+        <img src="./images/question.jpg" alt="TO_DO Screenshot 1" />
+        <img src="./images/question.jpg" alt="TO_DO Screenshot 2" />
+        <img src="./images/question.jpg" alt="TO_DO Screenshot 3" />
+      </div>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <h2>🤖 AI Chatbot</h2>
+    <div class="tech-stack">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>FastApi</span><span>RAG</span><span> Sentence Transformers</span>
+      <span> MySql</span>
+    </div>
+   
+        <p>Completed development of an AI-powered chatbot for handling business-related queries using NLP and backend integration with FastAPI.</p>
+    <p> This chatbot project demonstrates my experience in AI and backend development. 
+       It uses Natural Language Processing (NLP) to understand user queries and respond conversationally. 
+       The backend is built with FastAPI, which provides fast and scalable endpoints for processing requests. 
+       It was designed for a company to handle business queries, improving customer interaction efficiency. 
+       </p>
+    <p><strong>Note:</strong> This project is company-owned and not publicly live.</p>
+  </div>
+</div>
+
+<!-- Job Portal Project -->
+<div id="job" class="project-section visible">
+  <div class="project-image">
+    <div class="slider">
+      <div class="slides">
+        <img src="./images/question.jpg" alt="TO_DO Screenshot 1" />
+        <img src="./images/question.jpg" alt="TO_DO Screenshot 2" />
+        <img src="./images/question.jpg" alt="TO_DO Screenshot 3" />
+      </div>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <h2>💼 Job Portal System</h2>
+    <div class="tech-stack">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      <span>Python</span><span>Django</span><span>RestApi</span>
+      <span>Postman</span><span>Ngnix</span><span>Gunicorn</span>
+    </div>
+    
+<p>Currently working on a multi-role Job and Service Portal with secure payments and admin oversight.</p>
+<p>The platform connects customers with verified service providers across various domains such as home cleaning, teaching, and technical services. 
+   Customers can post job requests, and providers can accept jobs after their profiles are verified by the admin. 
+   A built-in chat feature allows communication between customers and providers before starting the job. 
+   Once the job is completed, payments are processed with automatic admin commission deductions and the remaining amount transferred to the provider. 
+   The admin panel ensures full control over user verification, job management, and payment tracking. 
+   I am currently providing support for this project, which involves handling production issues, debugging, and implementing enhancements to improve system reliability and user experience.</p>
+
+  </div>
+</div>
+
+<!-- School Management Project -->
+<div id="school" class="project-section visible">
+  <div class="project-image">
+    <div class="slider">
+      <div class="slides">
+        <img src="./images/question.jpg" alt="TO_DO Screenshot 1" />
+        <img src="./images/question.jpg" alt="TO_DO Screenshot 2" />
+        <img src="./images/question.jpg" alt="TO_DO Screenshot 3" />
+      </div>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <h2>🏫 School Management System</h2>
+    <div class="tech-stack">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      <span>Python</span><span>Django</span><span>RestApi</span>
+      <span>Postman</span><span>Ngnix</span><span>Gunicorn</span>
+    </div>
+    
+<p>Currently working on a Django-based School Management System with role-based access and mobile app integration.</p>
+<p>The platform supports multiple schools under one organization, managed by a Super Admin, with School Admins overseeing their respective schools and Teachers managing academic activities. 
+   It includes features such as biometric attendance tracking via eSSL devices, payroll and salary generation, holiday management, test creation with student notifications, and comprehensive academic and administrative tools required by schools. 
+   A dedicated mobile app for students is powered by custom-built APIs, enabling real-time access to attendance, schedules, and test updates. 
+   I am currently providing support and maintenance for this project, handling bug fixes, feature enhancements, and ensuring smooth system performance. 
+   This work showcases my expertise in Django, REST API development, MySQL, and troubleshooting enterprise-grade applications integrated with hardware and mobile platforms.</p>
+
+    <div class="links">
+      <a href="https://school.vidyamate.in/login" target="_blank" class="link-btn">🔒 Internal Access</a>
+    </div>
+  </div>
+</div>
+
+<!-- TO_DO Project -->
+<div id="todo" class="project-section visible">
+  <div class="project-image">
+    <div class="slider">
+      <div class="slides">
+        <img src="./images/TO_DO.png" alt="TO_DO Screenshot 1" />
+        <img src="./images/todo2.png" alt="TO_DO Screenshot 2" />
+        <img src="./images/todo3.png" alt="TO_DO Screenshot 3" />
+      </div>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <h2>📝 To_Do List</h2>
+    <div class="tech-stack">
+      <span>HTML</span><span>CSS</span><span>Angular</span>
+    </div>
+    <p>Built using HTML, CSS, and Angular. Features dynamic task creation, completion, and deletion.</p>
+    <p>This project is a productivity-focused web app where users can manage their tasks effectively. 
+       It allows adding, deleting, and marking tasks as completed in real time. Angular’s two-way data binding and 
+       component-based architecture were used to build a responsive and interactive UI. 
+       The app highlights my ability to work with Angular, manage state, and deploy projects on Vercel.</p>
+
+
+    <div class="links">
+      <a href="https://todo-phi-inky.vercel.app/" target="_blank" class="link-btn">🚀 Live Demo</a>
+      <a href="https://github.com/bhutkarprajwal/TO_DO_Task4.git" target="_blank" class="link-btn">💻 GitHub</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Stopwatch -->
+<div id="stopwatch" class="project-section visible">
+  <div class="project-image">
+    <div class="slider">
+      <div class="slides">
+        <img src="./images/Stopwatchh.png" alt="TO_DO Screenshot 1" />
+        <img src="./images/stopwatch2.png" alt="TO_DO Screenshot 2" />
+        <img src="./images/stopwatch3.png" alt="TO_DO Screenshot 3" />
+      </div>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <h2>⏱️ Stopwatch</h2>
+    <div class="tech-stack">
+      <span>HTML</span><span>CSS</span><span>Angular</span><span>JavaScript</span>
+      
+    </div>
+    
+    <p>Built a stopwatch using HTML, CSS, and JavaScript with start, stop, and reset features.</p>
+    <p>The stopwatch was developed as a practice project to strengthen my skills in DOM manipulation and event handling. 
+       It includes precise time tracking and interactive button controls with a responsive design. 
+       This project highlights how JavaScript can be used to build small yet effective utilities with smooth UI interaction.</p>
+    
+    <div class="links">
+      <a href="https://bhutkarprajwal.github.io/Stopwatch_Task2/" target="_blank" class="link-btn">🚀 Live Demo</a>
+      <a href="https://github.com/bhutkarprajwal/Stopwatch_Task2.git" target="_blank" class="link-btn">💻 GitHub</a>
+    </div>
+  </div>
+</div>
+
+<!-- Tic Tac Toe -->
+<div id="tictactoe" class="project-section visible">
+  <div class="project-image">
+    <div class="slider">
+      <div class="slides">
+        <img src="./images/Tic_Tac.png" alt="TO_DO Screenshot 1" />
+        <img src="./images/tic2.png" alt="TO_DO Screenshot 2" />
+        <img src="./images/tic3.png" alt="TO_DO Screenshot 3" />
+      </div>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <h2>🎮 Tic Tac Toe</h2>
+    <div class="tech-stack">
+      <span>HTML</span><span>CSS</span><span>Angular</span><span>JavaScript</span>
+    </div>
+    
+        <p>Classic Tic-Tac-Toe game built using HTML, CSS, and JavaScript with interactive UI.</p>
+    <p>This project is a two-player game that checks for winning conditions dynamically after each move. 
+       It also highlights draw detection when no moves are left. 
+       The focus here was on implementing game logic, interactive frontend design, 
+       and providing an enjoyable user experience through visual feedback.</p>
+    <div class="links">
+      <a href="https://bhutkarprajwal.github.io/Tic_Tac_Task3/" target="_blank" class="link-btn">🚀 Live Demo</a>
+      <a href="https://github.com/bhutkarprajwal/Tic_Tac_Task3.git" target="_blank" class="link-btn">💻 GitHub</a>
+    </div>
+  </div>
+</div>
+
+<!-- Rock Paper Scissors -->
+<div id="rockpaper" class="project-section visible">
+  <div class="project-image">
+    <div class="slider">
+      <div class="slides">
+        <img src="./images/Rock.png" alt="TO_DO Screenshot 1" />
+        <img src="./images/Rock.png" alt="TO_DO Screenshot 2" />
+        <img src="./images/Rock.png" alt="TO_DO Screenshot 3" />
+      </div>
+    </div>
+  </div>
+
+  <div class="project-content">
+     <h2>🪨✂️📄 Rock Paper Scissors</h2>
+    <div class="tech-stack">
+      <span>HTML</span><span>CSS</span><span>Angular</span>
+    </div>
+   
+     <p>Built using Angular, HTML, and CSS with real-time score tracking and UI feedback.</p>
+    <p>The game applies Angular’s data-binding and conditional rendering to update scores instantly. 
+       It tracks user and computer choices, determines the winner of each round, and updates the scoreboard dynamically. 
+       This project demonstrates my skills in building engaging interactive applications with Angular.</p>
+    
+    <div class="links">
+      <a href="https://rock-paper-15m1boof4-bhutkarprajwals-projects.vercel.app" target="_blank" class="link-btn">🚀 Live Demo</a>
+      <a href="https://github.com/bhutkarprajwal/Rock_Paper-.git" target="_blank" class="link-btn">💻 GitHub</a>
+    </div>
+  </div>
+</div>
+
+<!-- Weather App -->
+<div id="weather" class="project-section visible">
+  <div class="project-image">
+    <div class="slider">
+      <div class="slides">
+        <img src="./images/whetaher.png" alt="TO_DO Screenshot 1" />
+        <img src="./images/whetaher.png" alt="TO_DO Screenshot 2" />
+        <img src="./images/whetaher.png" alt="TO_DO Screenshot 3" />
+      </div>
+    </div>
+  </div>
+
+  <div class="project-content">
+        <h2>🌦 Weather App</h2>
+    <div class="tech-stack">
+      <span>HTML</span><span>CSS</span><span>Angular</span><span>Javascript</span>
+    </div>
+
+    <p>Displays real-time weather using JavaScript and OpenWeatherMap API.</p>
+    <p>The app fetches live weather data based on city input and displays temperature, humidity, and conditions. 
+       It is built using asynchronous JavaScript (fetch API) to consume data from OpenWeatherMap. 
+       This project highlights my ability to integrate third-party APIs and handle asynchronous requests for real-time applications.</p>
+
+    <div class="links">
+      <a href="https://bhutkarprajwal.github.io/Whether_JS/" target="_blank" class="link-btn">🚀 Live Demo</a>
+      <a href="https://github.com/bhutkarprajwal/Whether_JS.git" target="_blank" class="link-btn">💻 GitHub</a>
+    </div>
+  </div>
+</div>
+
+<!-- E-Medicine -->
+<div id="emedicine" class="project-section visible">
+  <div class="project-image">
+    <div class="slider">
+      <div class="slides">
+        <img src="./images/E-medicine.png" alt="TO_DO Screenshot 1" />
+        <img src="./images/E-medicine.png" alt="TO_DO Screenshot 2" />
+        <img src="./images/E-medicine.png" alt="TO_DO Screenshot 3" />
+      </div>
+    </div>
+  </div>
+
+  <div class="project-content">
+     <h2>💊 E-Medicine Platform</h2>
+    <div class="tech-stack">
+     
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      <span>Python</span><span>Django</span><span>RestApi</span>
+      <span>Postman</span><span>GitHub</span>
+    </div>
+   
+     <p>Full-stack responsive e-commerce platform for medicines using Django REST, MySQL, and frontend with HTML/CSS/JS.</p>
+    <p>This project replicates an online pharmacy platform where users can browse medicines, 
+       add them to the cart, and place orders securely. 
+       The backend was built with Django REST Framework and MySQL for secure data handling, 
+       while the frontend was designed to be responsive and user-friendly. 
+       It demonstrates my ability to build scalable, full-stack e-commerce solutions with real-world use cases.</p>
+    <p><strong>Note:</strong> Demo link and source not publicly available.</p>
+  </div>
+</div>
+
+<script>
+  // Handle project display
+  const urlParams = new URLSearchParams(window.location.search);
+  const project = urlParams.get("project");
+
+  if (project) {
+    const section = document.getElementById(project);
+    if (section) {
+      document.querySelectorAll('.project-section').forEach(div => div.classList.remove("visible"));
+      section.classList.add("visible");
+    } else {
+      document.body.innerHTML += `<p style="color: red; text-align: center;">Project "${project}" not found.</p>`;
+    }
+  } else {
+    document.body.innerHTML += `<p style="color: gray; text-align: center;">No project selected.</p>`;
+  }
+
+  // Back button function
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+</body>
+</html>
