@@ -60,32 +60,45 @@
       max-width: 1100px;
       transition: all 0.3s ease;
     }
+.project-section.visible {
+  display: flex;
+  gap: 35px;
+  align-items: stretch; 
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 50px auto;
+  box-sizing: border-box;
+}
 
-    .project-section.visible {
-      display: flex;
-      gap: 35px;
-      align-items: stretch; /* Make all children (image and content) same height */
-      flex-wrap: wrap;
-      /* Remove vertical padding from .project-section, use only margin for outer spacing */
-      padding: 0;
-      margin: 50px auto;
-      box-sizing: border-box;
-    }
+.project-image {
+  width: 350px;       /* you can adjust width */
+  height: 250px;      /* fixed uniform height for all images */
+  padding: 0;
+  overflow: hidden;   /* keeps zoom inside the box */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
 
-    .project-image {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      /* Make sure image area fills the height of the section */
-      padding: 40px;
-      box-sizing: border-box;
-    }
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* ensures image fills box properly */
+  transition: .5s ease;
+}
+
+.project-image:hover img {
+  transform: scale(1.1);
+}
+
 
     /* Image Slider */
     .slider {
       position: relative;
       width: 350px;
       max-width: 100%;
+      
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 6px 18px rgba(0,0,0,0.4);
@@ -436,9 +449,9 @@ html, body {
   <div class="project-image">
     <div class="slider">
       <div class="slides">
-        <img src="./images/TO_DO.png" alt="TO_DO Screenshot 1" />
-        <img src="./images/todo2.png" alt="TO_DO Screenshot 2" />
-        <img src="./images/todo3.png" alt="TO_DO Screenshot 3" />
+        <img src="./images/todo-1.png" alt="TO_DO Screenshot 1" />
+        <img src="./images/todo-2.png" alt="TO_DO Screenshot 2" />
+        <img src="./images/todo-3.png" alt="TO_DO Screenshot 3" />
       </div>
     </div>
   </div>
@@ -468,9 +481,9 @@ html, body {
   <div class="project-image">
     <div class="slider">
       <div class="slides">
-        <img src="./images/Stopwatchh.png" alt="TO_DO Screenshot 1" />
-        <img src="./images/stopwatch2.png" alt="TO_DO Screenshot 2" />
-        <img src="./images/stopwatch3.png" alt="TO_DO Screenshot 3" />
+        <img src="./images/stopwatch-1.png" alt="TO_DO Screenshot 1" />
+        <img src="./images/stopwatch-2.png" alt="TO_DO Screenshot 2" />
+        <img src="./images/stopwatch-3.png" alt="TO_DO Screenshot 3" />
       </div>
     </div>
   </div>
@@ -488,7 +501,7 @@ html, body {
        This project highlights how JavaScript can be used to build small yet effective utilities with smooth UI interaction.</p>
     
     <div class="links">
-      <a href="https://bhutkarprajwal.github.io/Stopwatch_Task2/" target="_blank" class="link-btn">🚀 Live Demo</a>
+      <a href="https://stopwatch-task2.vercel.app/" target="_blank" class="link-btn">🚀 Live Demo</a>
       <a href="https://github.com/bhutkarprajwal/Stopwatch_Task2.git" target="_blank" class="link-btn">💻 GitHub</a>
     </div>
   </div>
@@ -499,9 +512,9 @@ html, body {
   <div class="project-image">
     <div class="slider">
       <div class="slides">
-        <img src="./images/Tic_Tac.png" alt="TO_DO Screenshot 1" />
-        <img src="./images/tic2.png" alt="TO_DO Screenshot 2" />
-        <img src="./images/tic3.png" alt="TO_DO Screenshot 3" />
+        <img src="./images/tic_tac1.png" alt="TO_DO Screenshot 1" />
+        <img src="./images/tic_tac2.png" alt="TO_DO Screenshot 2" />
+        <img src="./images/tic_tac3.png" alt="TO_DO Screenshot 3" />
       </div>
     </div>
   </div>
@@ -518,7 +531,7 @@ html, body {
        The focus here was on implementing game logic, interactive frontend design, 
        and providing an enjoyable user experience through visual feedback.</p>
     <div class="links">
-      <a href="https://bhutkarprajwal.github.io/Tic_Tac_Task3/" target="_blank" class="link-btn">🚀 Live Demo</a>
+      <a href="https://tic-tac-prajwal-bhutkar.vercel.app/ target="_blank" class="link-btn">🚀 Live Demo</a>
       <a href="https://github.com/bhutkarprajwal/Tic_Tac_Task3.git" target="_blank" class="link-btn">💻 GitHub</a>
     </div>
   </div>
@@ -529,9 +542,9 @@ html, body {
   <div class="project-image">
     <div class="slider">
       <div class="slides">
-        <img src="./images/Rock.png" alt="TO_DO Screenshot 1" />
-        <img src="./images/Rock.png" alt="TO_DO Screenshot 2" />
-        <img src="./images/Rock.png" alt="TO_DO Screenshot 3" />
+        <img src="./images/rock-1.png" alt="TO_DO Screenshot 1" />
+        <img src="./images/rock-2.png" alt="TO_DO Screenshot 2" />
+        <img src="./images/rock-3.png" alt="TO_DO Screenshot 3" />
       </div>
     </div>
   </div>
@@ -548,8 +561,65 @@ html, body {
        This project demonstrates my skills in building engaging interactive applications with Angular.</p>
     
     <div class="links">
-      <a href="https://rock-paper-15m1boof4-bhutkarprajwals-projects.vercel.app" target="_blank" class="link-btn">🚀 Live Demo</a>
+      <a href="https://rock-paper-snowy.vercel.app/" target="_blank" class="link-btn">🚀 Live Demo</a>
       <a href="https://github.com/bhutkarprajwal/Rock_Paper-.git" target="_blank" class="link-btn">💻 GitHub</a>
+    </div>
+  </div>
+</div>
+<!-- Maharashtra Tourist Places -->
+<div id="mtp" class="project-section visible">
+  <div class="project-image">
+    <div class="slider">
+      <div class="slides">
+        <img src="./images/mtp-1.png" alt="Maharashtra Tourist Places Screenshot 1" />
+        <img src="./images/mtp-2.png" alt="Maharashtra Tourist Places Screenshot 2" />
+        <img src="./images/mtp-3.png" alt="Maharashtra Tourist Places Screenshot 3" />
+      </div>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <h2>🏞 Maharashtra Tourist Places</h2>
+    <div class="tech-stack">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      <span>Angular</span><span>Django API</span><span>MySQL</span>
+    </div>
+
+    <p>Developed a responsive web app to showcase popular tourist destinations in Maharashtra.</p>
+    <p>The app integrates Angular for dynamic UI, Django API for backend services, and MySQL for data storage. 
+       It highlights my skills in building full-stack applications with database connectivity and API-driven architecture.</p>
+
+    <div class="links">
+      <a href="https://mtdc.vercel.app/" target="_blank" class="link-btn">🚀 Live Demo</a>
+      <a href="https://github.com/bhutkarprajwal/MTDC.git" target="_blank" class="link-btn">💻 GitHub</a>
+    </div>
+  </div>
+</div>
+<!-- Gemini Clone -->
+<div id="gemini" class="project-section visible">
+  <div class="project-image">
+    <div class="slider">
+      <div class="slides">
+        <img src="./images/gemini-clone1.png" alt="Gemini Clone Screenshot 1" />
+        <img src="./images/gemini-clone2.png" alt="Gemini Clone Screenshot 2" />
+        <img src="./images/gemini-clone3.png" alt="Gemini Clone Screenshot 3" />
+      </div>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <h2>🤖 Gemini Clone</h2>
+    <div class="tech-stack">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+    </div>
+
+    <p>Built a Gemini UI clone with a modern and responsive interface.</p>
+    <p>The project uses React for component-based development and JavaScript for interactivity. 
+       It demonstrates my ability to replicate complex UIs, manage state, and ensure a smooth user experience across devices.</p>
+
+    <div class="links">
+      <a href="https://gemini-clone-project-lake.vercel.app/" target="_blank" class="link-btn">🚀 Live Demo</a>
+      <a href="https://github.com/bhutkarprajwal/Gemini_clone_project.git" target="_blank" class="link-btn">💻 GitHub</a>
     </div>
   </div>
 </div>
@@ -559,9 +629,9 @@ html, body {
   <div class="project-image">
     <div class="slider">
       <div class="slides">
-        <img src="./images/whetaher.png" alt="TO_DO Screenshot 1" />
-        <img src="./images/whetaher.png" alt="TO_DO Screenshot 2" />
-        <img src="./images/whetaher.png" alt="TO_DO Screenshot 3" />
+        <img src="./images/wheather-1.png" alt="TO_DO Screenshot 1" />
+        <img src="./images/wheater-2.png" alt="TO_DO Screenshot 2" />
+        <img src="./images/whether-3.png" alt="TO_DO Screenshot 3" />
       </div>
     </div>
   </div>
@@ -589,8 +659,8 @@ html, body {
   <div class="project-image">
     <div class="slider">
       <div class="slides">
-        <img src="./images/E-medicine.png" alt="TO_DO Screenshot 1" />
-        <img src="./images/E-medicine.png" alt="TO_DO Screenshot 2" />
+        <img src="./images/e-medicine1.png" alt="TO_DO Screenshot 1" />
+        <img src="./images/e-mediine2.png" alt="TO_DO Screenshot 2" />
         <img src="./images/E-medicine.png" alt="TO_DO Screenshot 3" />
       </div>
     </div>
