@@ -1,0 +1,42 @@
+[
+  {
+    "id": "pybex",
+    "company": "Pybex Technology Private Limited",
+    "role": "Software Engineer",
+    "duration": "June 1, 2025 – Present",
+    "type": "Full Time",
+    "description": "Backend engineering, product ownership, feature planning, and production issue resolution across the company's portfolio of applications.",
+    "featured": true,
+    "visibility": "primary"
+  },
+  {
+    "id": "skillcraft",
+    "company": "SkillCraft",
+    "role": "Internship",
+    "duration": "January 1, 2025 – January 31, 2025",
+    "type": "Internship",
+    "description": "",
+    "featured": false,
+    "visibility": "secondary"
+  },
+  {
+    "id": "manav-school",
+    "company": "Manav School of Engineering & Technology",
+    "role": "Bachelor of Computer Engineering",
+    "duration": "2021 – 2024",
+    "type": "Education",
+    "description": "Akola, Maharashtra. CGPA: 7.79",
+    "featured": true,
+    "visibility": "primary"
+  },
+  {
+    "id": "govt-polytechnic",
+    "company": "Government Polytechnic Amravati",
+    "role": "Diploma in Information Technology",
+    "duration": "2018 – 2021",
+    "type": "Education",
+    "description": "Amravati, Maharashtra. Percentage: 76.95%",
+    "featured": false,
+    "visibility": "secondary"
+  }
+]

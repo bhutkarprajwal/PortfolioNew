@@ -1,0 +1,96 @@
+.skills {
+    min-height: 90vh;
+}
+
+.skills h2 {
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.skills .heading span {
+    color: var(--main-color);
+}
+
+.skills-category {
+    margin-bottom: 3rem;
+}
+
+.category-title {
+    font-size: 2.2rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.skills .container {
+    background: rgba(19, 27, 47, 0.5); /* using second-bg-color approx */
+    color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skills .container .row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.8rem;
+}
+
+.skills .container .bar {
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: var(--bg-color);
+    transition: 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.skills .container .bar:hover {
+    box-shadow: 0 8px 15px rgba(99, 102, 241, 0.15);
+    background-color: var(--second-bg-color);
+    border-color: var(--border-color);
+}
+
+.skills .container .bar .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skills .container .bar .info i {
+    font-size: 4rem;
+}
+
+.skills .container .bar .info span {
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.skills .container .bar .info img {
+    width: 48px;
+    height: 48px;
+}
+
+@media screen and (max-width: 900px) {
+    .skills .container .row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skills .container {
+        padding: 1rem;
+        width: 100%;
+    }
+    .skills .container .row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
