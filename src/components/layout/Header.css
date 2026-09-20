@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 1.5rem 9%;
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,7 @@
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
-    margin-left: 4rem;
+    margin-left: 3rem;
     transition: .3s;
 }
 
@@ -45,7 +45,7 @@
 
 @media(max-width: 991px) {
     .header {
-        padding: 2rem 3%;
+        padding: 1.5rem 3%;
     }
 }
 

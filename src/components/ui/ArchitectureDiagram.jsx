@@ -4,10 +4,10 @@ import './ArchitectureDiagram.css';
 const ArchitectureDiagram = ({ project, isHeader = false }) => {
   if (!project) return null;
 
-  if (project.id === 'lynkist') {
+  if (project.id === 'whatsapp-marketing-platform') {
     return (
       <div className="arch-diagram arch-clean">
-        <div className="arch-title">Lynkist Technical Flow</div>
+        <div className="arch-title">Technical Flow</div>
         <div className="arch-node">WhatsApp / Meta APIs</div>
         <div className="arch-arrow">↓</div>
         <div className="arch-node">FastAPI Backend</div>

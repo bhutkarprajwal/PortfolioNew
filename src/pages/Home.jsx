@@ -7,6 +7,7 @@ import SkillsSection from '../components/sections/SkillsSection';
 import ExperienceSection from '../components/sections/ExperienceSection';
 import EducationSection from '../components/sections/EducationSection';
 import ContactSection from '../components/sections/ContactSection';
+import SEO from '../components/ui/SEO';
 
 const Home = () => {
   const location = useLocation();
@@ -28,6 +29,12 @@ const Home = () => {
 
   return (
     <>
+      <SEO 
+        title="Prajwal Bhutkar | Python Backend Developer" 
+        description="Prajwal Bhutkar is a Python Backend Developer with 2 years of experience building APIs and backend systems using FastAPI and Django, with experience in integrations, automation and real-time systems."
+        canonicalUrl="https://portfolio-prajwal--bhutkar.vercel.app/"
+        noindex={false}
+      />
       <Hero />
       <About />
       <ExperienceSection />

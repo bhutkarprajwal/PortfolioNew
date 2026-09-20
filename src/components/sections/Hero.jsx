@@ -7,8 +7,11 @@ const Hero = () => {
       <div className="home-content">
         <h1>Prajwal Bhutkar</h1>
         <h3>
-          Python Backend Developer building real-world applications, scalable APIs, and end-to-end product features.
+          Python Backend Developer with 2 years of experience building APIs and backend systems using FastAPI and Django.
         </h3>
+        <p>
+          I work on third-party integrations, automation, production applications, and real-time systems.
+        </p>
         <div className="social-media">
           <a href="https://www.linkedin.com/in/prajwal-bhutkar/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <i className='bx bxl-linkedin'></i>

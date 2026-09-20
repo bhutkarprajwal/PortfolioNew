@@ -1,14 +1,14 @@
 [
   {
-    "id": "lynkist",
-    "title": "Lynkist",
+    "id": "whatsapp-marketing-platform",
+    "title": "WhatsApp Marketing & AI Automation Platform",
     "projectType": "Professional",
     "public": false,
     "visibility": "Private",
     "featured": true,
     "tier": 1,
     "shortDescription": "WhatsApp Marketing Platform with AI Agents",
-    "context": "A WhatsApp marketing and automation SaaS platform.",
+    "context": "A WhatsApp marketing and automation SaaS platform with campaigns, integrations, and AI agents.",
     "problem": "Building reliable message routing, catalog management, and AI agent automation.",
     "role": "Technical Manager",
     "contribution": "Led the technical development of the platform, focusing heavily on backend APIs and integrations. I built the Meta/WhatsApp integrations, webhooks, templates, catalog management, campaigns, and AI agents. I set up Redis and Celery for background processing. Beyond development, I managed product requirements, team tasks, UAT, production debugging, and coordinated with clients for onboarding and support.",

@@ -10,7 +10,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
+      setIsScrolled(window.scrollY > 80);
       
       const sections = ['home', 'about', 'experience', 'education', 'skills', 'work', 'contact'];
       let current = 'home';
@@ -19,16 +19,26 @@ const Header = () => {
         const el = document.getElementById(section);
         if (el) {
           const rect = el.getBoundingClientRect();
-          if (rect.top <= 150) {
+          if (rect.top <= 200) {
             current = section;
           }
         }
       }
       setActiveSection(current);
     };
+
+    // Run initially to set the correct active section based on current scroll or hash
+    handleScroll();
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    if (location.hash) {
+      setActiveSection(location.hash.substring(1));
+    }
+  }, [location.hash]);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   

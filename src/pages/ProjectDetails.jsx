@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import projectsData from '../data/projects.json';
 import ArchitectureDiagram from '../components/ui/ArchitectureDiagram';
+import SEO from '../components/ui/SEO';
 import './ProjectDetails.css';
 
 const ProjectDetails = () => {
@@ -20,13 +21,21 @@ const ProjectDetails = () => {
         <h2>Project "{id}" not found.</h2>
         <button className="back-btn" onClick={() => navigate('/#work')}>← Back to Home</button>
       </div>
-    );
-  }
+    );  }
 
-
+  const isPublic = project.public && project.visibility === "Public";
+  const seoTitle = isPublic ? `${project.title} | Prajwal Bhutkar` : 'Project Details | Prajwal Bhutkar';
+  const seoDescription = isPublic ? project.shortDescription : 'Confidential project details.';
+  const seoCanonical = isPublic ? `https://portfolio-prajwal--bhutkar.vercel.app/project/${id}` : null;
 
   return (
     <div className="project-details-page">
+      <SEO 
+        title={seoTitle} 
+        description={seoDescription} 
+        canonicalUrl={seoCanonical} 
+        noindex={!isPublic} 
+      />
       <header className="project-header">
         <h1>{project.title}</h1>
         <button className="back-btn" onClick={() => navigate('/#work')}>← Back to Portfolio</button>
@@ -68,11 +77,9 @@ const ProjectDetails = () => {
         </aside>
 
         <main className="project-main">
-          {project.projectType !== 'Legacy' && (
-            <div className="project-visual-header">
-              <ArchitectureDiagram project={project} isHeader={true} />
-            </div>
-          )}
+          <div className="project-visual-header">
+            <ArchitectureDiagram project={project} isHeader={true} />
+          </div>
 
           <div className="case-study-section">
             <h3>Context</h3>

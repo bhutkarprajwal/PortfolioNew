@@ -6,9 +6,6 @@ import './ProjectCard.css';
 const ProjectCard = ({ project }) => {
   const isFeatured = project.tier === 1;
 
-  // Use diagram for all core projects (non-legacy)
-  const useDiagram = project.projectType !== 'Legacy';
-
   return (
     <div className={`project-card ${isFeatured ? 'featured-card' : 'compact-card'}`}>
       <div className="card-visual">
@@ -17,11 +14,7 @@ const ProjectCard = ({ project }) => {
           {project.projectType === 'Personal' ? 'Personal Project' : project.status}
         </div>
         
-        {useDiagram ? (
-          <ArchitectureDiagram project={project} />
-        ) : (
-          <img src={project.screenshots[0]} alt={project.title} />
-        )}
+        <ArchitectureDiagram project={project} />
       </div>
       
       <div className="card-content">

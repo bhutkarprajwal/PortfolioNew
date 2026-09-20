@@ -3,10 +3,11 @@
     justify-content: space-between;
     align-items: center;
     background: var(--section-bg-a);
+    padding-top: 8rem;
 }
 
 .home-content h3 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     font-weight: 700;
     cursor: default;
 }
@@ -59,7 +60,7 @@
     height: 100%;
     border-radius: 50%;
     position: relative;
-    width: 29vw;
+    width: 25vw;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     cursor: default;
     transition: 0.4s ease-in-out;
