@@ -8,7 +8,7 @@ const EducationSection = () => {
   if (educationItems.length === 0) return null;
 
   return (
-    <div className="education" id="education">
+    <section className="education" id="education">
       <h2 className="heading">My <span>Education</span></h2>
 
       <div className="education-container">
@@ -25,7 +25,7 @@ const EducationSection = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

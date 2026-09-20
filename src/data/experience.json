@@ -21,21 +21,21 @@
   },
   {
     "id": "manav-school",
-    "company": "Manav School of Engineering & Technology",
+    "company": "Manav School of Engineering & Technology | Akola, MH",
     "role": "Bachelor of Computer Engineering",
     "duration": "2021 – 2024",
     "type": "Education",
-    "description": "Akola, Maharashtra. CGPA: 7.79",
+    "description": "CGPA: 7.79",
     "featured": true,
     "visibility": "primary"
   },
   {
     "id": "govt-polytechnic",
-    "company": "Government Polytechnic Amravati",
+    "company": "Government Polytechnic Amravati | Amravati, MH",
     "role": "Diploma in Information Technology",
     "duration": "2018 – 2021",
     "type": "Education",
-    "description": "Amravati, Maharashtra. Percentage: 76.95%",
+    "description": "Percentage: 76.95%",
     "featured": false,
     "visibility": "secondary"
   }

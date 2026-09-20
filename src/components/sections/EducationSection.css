@@ -1,5 +1,5 @@
 .education {
-    background: var(--bg-color);
+    background: var(--section-bg-b);
     padding: 6rem 9% 4rem;
 }
 
@@ -18,7 +18,7 @@
 .education-card {
     display: flex;
     align-items: center;
-    background: var(--second-bg-color);
+    background: var(--section-bg-a);
     padding: 2.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);

@@ -6,8 +6,8 @@ import './ProjectCard.css';
 const ProjectCard = ({ project }) => {
   const isFeatured = project.tier === 1;
 
-  // Use diagram if explicitly these projects or if screenshots array is missing/empty
-  const useDiagram = ['lynkist', 'real-time-trading-poc'].includes(project.id) || !project.screenshots || project.screenshots.length === 0;
+  // Use diagram for all core projects (non-legacy)
+  const useDiagram = project.projectType !== 'Legacy';
 
   return (
     <div className={`project-card ${isFeatured ? 'featured-card' : 'compact-card'}`}>

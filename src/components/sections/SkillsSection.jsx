@@ -9,7 +9,7 @@ const SkillsSection = () => {
       <h2 className="heading"><i className="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
       
       {skillsData.map((category, index) => (
-        <div key={index} className="skills-category">
+        <div key={index} className={`skills-category ${category.category === 'Backend' ? 'backend-category' : ''}`}>
           <h3 className="category-title">{category.category}</h3>
           <div className="container">
             <div className="row">

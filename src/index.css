@@ -14,6 +14,8 @@
 :root {
     --bg-color: #0a0f1c;
     --second-bg-color: #131b2f;
+    --section-bg-a: #0a0f1c;
+    --section-bg-b: #131b2f;
     --text-color: #e2e8f0;
     --main-color: #6366f1;
     --accent-secondary: #0ea5e9;

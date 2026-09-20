@@ -18,7 +18,7 @@ const ProjectDetails = () => {
     return (
       <div className="project-not-found">
         <h2>Project "{id}" not found.</h2>
-        <button className="back-btn" onClick={() => navigate('/')}>← Back to Home</button>
+        <button className="back-btn" onClick={() => navigate('/#work')}>← Back to Home</button>
       </div>
     );
   }
@@ -29,7 +29,7 @@ const ProjectDetails = () => {
     <div className="project-details-page">
       <header className="project-header">
         <h1>{project.title}</h1>
-        <button className="back-btn" onClick={() => navigate('/')}>← Back to Portfolio</button>
+        <button className="back-btn" onClick={() => navigate('/#work')}>← Back to Portfolio</button>
       </header>
 
       <div className="project-layout">
@@ -68,7 +68,7 @@ const ProjectDetails = () => {
         </aside>
 
         <main className="project-main">
-          {['lynkist', 'real-time-trading-poc'].includes(project.id) && (
+          {project.projectType !== 'Legacy' && (
             <div className="project-visual-header">
               <ArchitectureDiagram project={project} isHeader={true} />
             </div>

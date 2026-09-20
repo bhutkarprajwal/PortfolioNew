@@ -12,7 +12,7 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
       
-      const sections = ['home', 'about', 'experience', 'skills', 'work', 'contact'];
+      const sections = ['home', 'about', 'experience', 'education', 'skills', 'work', 'contact'];
       let current = 'home';
       
       for (const section of sections) {
@@ -49,6 +49,7 @@ const Header = () => {
             <a href="#home" className={activeSection === 'home' ? 'active' : ''} onClick={closeMenu}>Home</a>
             <a href="#about" className={activeSection === 'about' ? 'active' : ''} onClick={closeMenu}>About</a>
             <a href="#experience" className={activeSection === 'experience' ? 'active' : ''} onClick={closeMenu}>Experience</a>
+            <a href="#education" className={activeSection === 'education' ? 'active' : ''} onClick={closeMenu}>Education</a>
             <a href="#skills" className={activeSection === 'skills' ? 'active' : ''} onClick={closeMenu}>Skills</a>
             <a href="#work" className={activeSection === 'work' ? 'active' : ''} onClick={closeMenu}>Work</a>
             <a href="#contact" className={activeSection === 'contact' ? 'active' : ''} onClick={closeMenu}>Contact</a>
