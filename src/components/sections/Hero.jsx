@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="home-content">
         <h1>Prajwal Bhutkar</h1>
         <h3>
-          Python Backend Developer with 2 years of experience building APIs and backend systems using FastAPI and Django.
+          Python Backend Developer with professional experience building APIs and backend systems using FastAPI and Django.
         </h3>
         <p>
           I work on third-party integrations, automation, production applications, and real-time systems.

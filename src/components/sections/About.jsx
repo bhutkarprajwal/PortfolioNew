@@ -13,7 +13,7 @@ const About = () => {
     <h3 className="greeting">Hi, I'm Prajwal.</h3>
 
     <p>
-      I'm a Python Backend Developer with around 2 years of professional experience, mainly working on real-world applications and backend systems.
+      I'm a Python Backend Developer with professional experience, mainly working on real-world applications and backend systems.
     </p>
 
     <p>
